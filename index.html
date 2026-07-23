@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fazil Məmmədzadə | CV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <style>
+      /* CSS */
+    </style>
+  </head>
+
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #222;
+        background: #ececec;
+        padding: 30px;
+      }
+
+      a {
+        color: #16824e;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .resume {
+        width: 210mm;
+        min-height: 297mm;
+        margin: auto;
+        background: #fff;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        border: 1px solid #d9d9d9;
+      }
+
+      /*==============================
+    SIDEBAR
+==============================*/
+
+      .sidebar {
+        background: #f6f6f6;
+        border-right: 1px solid #d9d9d9;
+        padding: 35px 28px;
+      }
+
+      .profile {
+        margin-bottom: 35px;
+      }
+
+      .profile h1 {
+        font-size: 29px;
+        font-weight: 700;
+        color: #111;
+        line-height: 1.15;
+      }
+
+      .profile span {
+        display: block;
+        margin-top: 8px;
+        color: #16824e;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      /*==============================
+    BLOCKS
+==============================*/
+
+      .block {
+        margin-bottom: 32px;
+      }
+
+      .block:last-child {
+        margin-bottom: 0;
+      }
+
+      .block h3 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #16824e;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d9d9d9;
+      }
+
+      .block h3 i {
+        width: 18px;
+        text-align: center;
+      }
+
+      /*==============================
+    CONTACT
+==============================*/
+
+      .block ul {
+        list-style: none;
+      }
+
+      .block ul li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 12px;
+        color: #333;
+        word-break: break-word;
+      }
+
+      .block ul li:last-child {
+        margin-bottom: 0;
+      }
+
+      .block ul li i {
+        width: 16px;
+        color: #16824e;
+        margin-top: 3px;
+      }
+
+      /*==============================
+    TABLE
+==============================*/
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table tr {
+        border-bottom: 1px solid #ececec;
+      }
+
+      table tr:last-child {
+        border-bottom: none;
+      }
+
+      table td {
+        padding: 9px 0;
+        vertical-align: top;
+      }
+
+      table td:first-child {
+        width: 95px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      table td:last-child {
+        color: #111;
+        font-weight: 500;
+      }
+
+      /*==============================
+    SKILL LEVEL
+==============================*/
+
+      .skill {
+        margin-bottom: 15px;
+      }
+
+      .skill:last-child {
+        margin-bottom: 0;
+      }
+
+      .skill span {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        margin-bottom: 6px;
+        color: #333;
+        font-weight: 500;
+      }
+
+      .bar {
+        width: 100%;
+        height: 5px;
+        background: #dddddd;
+      }
+
+      .bar div {
+        height: 100%;
+        background: #16824e;
+      }
+      /*==============================
+    CONTENT
+==============================*/
+
+      .content {
+        padding: 35px 40px;
+      }
+
+      .section {
+        margin-bottom: 34px;
+      }
+
+      .section:last-child {
+        margin-bottom: 0;
+      }
+
+      .section h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #16824e;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #d9d9d9;
+      }
+
+      .section p {
+        text-align: justify;
+        color: #333;
+        line-height: 1.8;
+        margin-bottom: 14px;
+      }
+
+      .section p:last-child {
+        margin-bottom: 0;
+      }
+
+      /*==============================
+    TECHNOLOGIES
+==============================*/
+
+      .tech-group {
+        margin-bottom: 22px;
+      }
+
+      .tech-group:last-child {
+        margin-bottom: 0;
+      }
+
+      .tech-group h4 {
+        font-size: 14px;
+        color: #111;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      .tech-group ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        list-style: none;
+      }
+
+      .tech-group ul li {
+        border: 1px solid #d9d9d9;
+        padding: 5px 10px;
+        font-size: 12px;
+        color: #333;
+        background: #fafafa;
+      }
+
+      /*==============================
+    PROJECTS
+==============================*/
+
+      .projects {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .projects tr {
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .projects tr:last-child {
+        border-bottom: none;
+      }
+
+      .projects td {
+        padding: 16px 0;
+      }
+
+      .projects strong {
+        display: block;
+        color: #16824e;
+        font-size: 15px;
+        margin-bottom: 6px;
+      }
+
+      .projects p {
+        margin: 0;
+      }
+
+      .projects a {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 13px;
+        color: #16824e;
+      }
+
+      /*==============================
+    FOOTER
+==============================*/
+
+      footer {
+        margin-top: 35px;
+        padding-top: 14px;
+        border-top: 1px solid #d9d9d9;
+        text-align: center;
+        color: #777;
+        font-size: 12px;
+      }
+
+      /*==============================
+    PRINT
+==============================*/
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+
+        .resume {
+          border: none;
+          width: 100%;
+          min-height: auto;
+        }
+
+        a {
+          color: #16824e;
+          text-decoration: none;
+        }
+      }
+    </style>
+    <div class="resume">
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+        <header class="profile">
+          <h1>Fazil Məmmədzadə</h1>
+
+          <span>Full-Stack Developer</span>
+        </header>
+
+        <!-- CONTACT -->
+
+        <section class="block">
+          <h3>
+            <i class="fa-solid fa-address-card"></i>
+
+            Əlaqə
+          </h3>
+
+          <ul>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+
+              <span>055 396 65 42</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+
+              <span>fazilmmmdzad48@gmail.com</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+
+              <span>Sumqayıt, Azərbaycan</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-globe"></i>
+
+              <a
+                href="https://fazilmmmdzad.github.io/portfolio"
+                target="_blank"
+              >
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <i class="fa-brands fa-github"></i>
+
+              <a href="https://github.com/fazilmmmdzad" target="_blank">
+                GitHub
+              </a>
+            </li>
+
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+
+              <a href="https://instagram.com/fazil_memmedzade" target="_blank">
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- PERSONAL -->
+
+        <section class="block">
+          <h3>
+            <i class="fa-solid fa-user"></i>
+
+            Şəxsi Məlumat
+          </h3>
+
+          <table>
+            <tr>
+              <td>Doğum</td>
+
+              <td>16.12.2010</td>
+            </tr>
+
+            <tr>
+              <td>Vətəndaşlıq</td>
+
+              <td>Azərbaycan</td>
+            </tr>
+
+            <tr>
+              <td>Təhsil</td>
+
+              <td>10-cu sinif</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- SKILL LEVEL -->
+
+        <section class="block">
+          <h3>
+            <i class="fa-solid fa-chart-simple"></i>
+
+            Texnologiya Səviyyəsi
+          </h3>
+
+          <div class="skill">
+            <span>C#</span>
+            <div class="bar"><div style="width: 95%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>ASP.NET Core</span>
+            <div class="bar"><div style="width: 85%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>SQL Server</span>
+            <div class="bar"><div style="width: 90%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>HTML</span>
+            <div class="bar"><div style="width: 85%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>CSS</span>
+            <div class="bar"><div style="width: 70%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar"><div style="width: 70%"></div></div>
+          </div>
+          <div class="skill">
+            <span>jQuery</span>
+            <div class="bar"><div style="width: 60%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>Bootstrap</span>
+            <div class="bar"><div style="width: 70%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>SQLite</span>
+            <div class="bar"><div style="width: 80%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>MongoDB</span>
+            <div class="bar"><div style="width: 50%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>React</span>
+            <div class="bar"><div style="width: 50%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>Tailwind CSS</span>
+            <div class="bar"><div style="width: 40%"></div></div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- MAIN -->
+
+      <main class="content">
+        <!-- ==========================
+                HAQQIMDA
+        =========================== -->
+
+        <section class="section">
+          <h2>Haqqımda</h2>
+
+          <p>
+            Frontend və backend texnologiyalarından istifadə edərək miqyaslana
+            bilən veb tətbiqləri, API-lər, ERP və POS həlləri hazırlamağı
+            sevirəm və daim müasir texnologiyaları öyrənirəm.
+          </p>
+
+          <p>
+            Sumqayıtda yaşayan 15 yaşlı Full-Stack Developerəm və hazırda 10-cu
+            sinifdə təhsil alıram. Təxminən üç ildir proqramlaşdırma ilə
+            məşğulam. Bu sahəyə marağım proqram təminatının necə işlədiyini
+            anlamaq istəyimdən yaranıb.
+          </p>
+
+          <p>
+            Əsas diqqətimi Full-Stack developmentə yönəltmişəm və xüsusilə ERP
+            və POS sistemlərinə böyük maraq göstərirəm. Anbar idarəetməsi, satış
+            prosesləri və çox filiallı sistemlərin biznes məntiqi mənim üçün
+            xüsusi maraq kəsb edir.
+          </p>
+
+          <p>
+            Yeni texnologiyaları öyrənməyə daim həvəsliyəm. Bildiklərimin böyük
+            hissəsini real layihələr hazırlamaq, sənədləri araşdırmaq və praktik
+            təcrübə qazanmaqla əldə etmişəm.
+          </p>
+        </section>
+
+        <!-- ==========================
+                LAYİHƏLƏR
+        =========================== -->
+
+        <section class="section">
+          <h2>Layihələr</h2>
+
+          <table class="projects">
+            <tr>
+              <td>
+                <a
+                  href="https://github.com/fazilmmmdzad/FlightBooking"
+                  target="_blank"
+                >
+                  Flight Booking
+                </a>
+                <br /><br />
+                Onlayn bilet sifarişi, Check-in, Admin Paneli və Machine
+                Learning sərnişin proqnozlaşdırması olan tam funksional AI
+                dəstəkli səyahət və rezervasiya sistemi.
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <a
+                  href="https://github.com/fazilmmmdzad/HoneyPhoto"
+                  target="_blank"
+                >
+                  Honey Photo
+                </a>
+
+                <br /><br />
+
+                HoneyPhoto gündəlik şəkil emalı üçün hazırlanmış sadə, sürətli
+                və istifadəsi rahat şəkil redaktə tətbiqidir. Tətbiq seçilən
+                şəklin önizləməsini, fayl adı, ölçüsü, həcmi və formatı kimi
+                əsas məlumatları göstərir.
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <a
+                  href="https://github.com/fazilmmmdzad/Temperature_Transducer"
+                  target="_blank"
+                >
+                  Honey Degrees
+                </a>
+
+                <br /><br />
+
+                Selsi, Faranheyt və Kelvin arasında temperaturları sürətlə
+                çevirən sadə bir proqram.
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <footer>© 2026 Fazil Məmmədzadə</footer>
+      </main>
+    </div>
+  </body>
+</html>
